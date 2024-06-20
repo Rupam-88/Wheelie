@@ -6,7 +6,7 @@
   body {
     min-height: 100vh;
     display: grid;
-    place-items: center;
+    place-items: bottom;
     overflow: hidden;
     font-family: sans-serif;
     background-color: rgb(1, 1, 1);
@@ -14,37 +14,11 @@
     color: white;
     transition: background-color 500ms ease;
   } 
-  h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      top: 0;
-      text-align: center;
-      color: #fff;
-      background: linear-gradient(45deg, #f3ec78, #af4261);
-      padding: 1rem;
-      position: absolute;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      margin: 2rem auto;
-      width: top;
-      transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  h1:hover {
-    transform: translate(-50%, -10px) scale(1.05) rotate(-2deg);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(45deg, #f3ec78, #ff9a8b);
-}
 
-/* Adding an optional active effect for click feedback */
-h1:active {
-    transform: translate(-50%, -5px) scale(0.98);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
   .container {
-    position: relative;
+    position: center;
     width: min(400px, 100%);
-    height: 30rem;
+    height: 60rem;
   } 
   ul {
     list-style: none;
@@ -93,13 +67,13 @@ h1:active {
     left: 100%;
     transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.125rem;
   }
   .controls button {
-    width: 5rem;
-    height: 5rem;
-    font-size: 1.2rem;
+    width: 4.5rem;
+    height:4.5rem;
+    font-size: 1rem;
     color: #fff;
     border: black;
     background: linear-gradient(145deg, #3a7bd5, #3a6073);
